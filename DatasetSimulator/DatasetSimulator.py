@@ -35,11 +35,11 @@ def release_instance(userId, timestamp):
 	del occupied[userId]
 
 def main():
-	df_sorted = pd.read_csv("./dataset.txt", sep=" ")
-	print(df_sorted)
+	df_sorted = pd.read_csv("./newDataSet.txt", sep=" ")
+	# print(df_sorted)
 
 	for index, row in df_sorted.iterrows():
-		print(index, row)
+		# print(index, row)
 		if(row["action"] == "start"):
 			get_instance(row["id"], row["timestamp"])
 		elif(row["action"] == "end"):
@@ -47,8 +47,13 @@ def main():
 
 	instances = list(instance_hours.keys())
 	instances.sort()
+	total = 0
+	print(instances)
 	for ins in instances:
+		total += instance_hours[ins]
 		print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))
+	print(f"Total Hours: {total}")
+
 
 	# active = []
 	# o = open("./wow_cleaned_final.txt","w")
