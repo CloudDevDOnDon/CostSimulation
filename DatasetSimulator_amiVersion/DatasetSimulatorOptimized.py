@@ -5,7 +5,7 @@ instance_count = 0
 instance_seconds = {} #how many seconds used nonstop [0] and time started running [1], need to initialize to 0
 instance_hours = {} #how many AWS hours in total, need to initialize to 0
 available = {} #contain AMI tagged, instanceId[0] => time last used [0], and extra time [1]
-occupied = {} #contain userId, instanceId [0], and time start used [1], and AMIid [2]
+occupied = {} #contain userId => instanceId [0], and time start used [1], and AMIid [2]
 lambda_count = 0
 duration = []
 
@@ -17,9 +17,16 @@ def get_instance(userId, timestamp, gameID):
 	global occupied
 	global lambda_count
 
+	"""
+	example of available:
+	
+	{gameID: InstanceID : [time last used, extra time]}
+
+	"""
 	if gameID in available:
 		if (len(available[gameID])  == 0):
 			instance_count += 1
+			# saved gameID in occupied for the release function
 			occupied[userId] = [instance_count, timestamp, gameID]
 			instance_seconds[instance_count] = [0, timestamp]
 			instance_hours[instance_count] = 0
@@ -57,6 +64,7 @@ def release_instance(userId, timestamp):
 	ins = occupied[userId][0]
 	instance_seconds[ins][0] = timestamp - instance_seconds[ins][1]
 	extra_time = (3600-(instance_seconds[ins][0]%3600))
+	# If the instance ID already exist, append else create new key and append
 	if occupied[userId][2] in available:
 		available[occupied[userId][2]][ins] = [timestamp, extra_time]
 	else:
@@ -74,12 +82,14 @@ def main():
 	global lambda_count
 	global duration
 
+	# Read a different dataSet to differenciate between single/ multi AMI
 	df_sorted = pd.read_csv("./newDataSet.txt", sep=" ")
 	# print(df_sorted)
 
 	for index, row in df_sorted.iterrows():
 		# print(index, row)
 		if(row["action"] == "start"):
+			# Added an additional column with information regarding what each users wish to play
 			get_instance(row["id"], row["timestamp"], int(row['GameID']))
 		elif(row["action"] == "end"):
 			release_instance(row["id"], row["timestamp"])

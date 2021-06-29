@@ -3,8 +3,8 @@ import math
 
 instance_count = 0
 instance_hours = {} #how many AWS hours in total, need to initialize to 0
-available = {} #contain AMI tagged, instanceId[0], 
-occupied = {} #contain userId, instanceId [0], time start used [1]
+available = {} #contain AMI tagged => instanceId[0], 
+occupied = {} #contain userId => instanceId [0], time start used [1]
 
 def get_instance(userId, timestamp, gameID):
 	global instance_count
@@ -13,9 +13,17 @@ def get_instance(userId, timestamp, gameID):
 	global available
 	global occupied
 
+	"""
+	example of available:
+	
+	{gameID: [InstanceID]}
+
+	"""
+
 	if gameID in available:
 		if (len(available[gameID]) == 0):
 			instance_count += 1
+			# saved gameID in occupied for the release function
 			occupied[userId] = [instance_count, timestamp, gameID]
 			instance_hours[instance_count] = 0
 		else:
@@ -37,6 +45,7 @@ def release_instance(userId, timestamp):
 
 	ins = occupied[userId][0]
 	instance_hours[ins] += math.ceil((timestamp - occupied[userId][1])/3600)
+	# If the instance ID already exist, append else create new key and append
 	if occupied[userId][2] in available:
 		available[occupied[userId][2]].append(ins)
 	else:
@@ -47,12 +56,14 @@ def release_instance(userId, timestamp):
 
 
 def main():
+	# Read a different dataSet to differenciate between single/ multi AMI
 	df_sorted = pd.read_csv("./newDataSet.txt", sep=" ")
 	# print(df_sorted)
 
 	for index, row in df_sorted.iterrows():
 		# print(index, row)
 		if(row["action"] == "start"):
+			# Added an additional column with information regarding what each users wish to play
 			get_instance(row["id"], row["timestamp"], int(row['GameID']))
 		elif(row["action"] == "end"):
 			release_instance(row["id"], row["timestamp"])
