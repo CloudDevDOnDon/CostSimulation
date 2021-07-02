@@ -107,7 +107,9 @@ def main():
 	total = 0
 	for ins in instances:
 		total += instance_hours[ins]
-		print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))
+		# print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))
+		print(str(instance_hours[ins]))
+
 
 	print("Lambda function triggered " + str(lambda_count) +  " times")
 	print("Average duration = " + str(sum(duration)/len(duration)) + "s")
