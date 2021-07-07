@@ -73,8 +73,8 @@ def main():
 	total = 0
 	for ins in instances:
 		total += instance_hours[ins]
-		# print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))
-		print(str(instance_hours[ins]))
+		print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))
+		#print(str(instance_hours[ins]))
 
 	print(f"Total Hours: {total}")
 
