@@ -35,7 +35,7 @@ def release_instance(userId, timestamp):
 	del occupied[userId]
 
 def main():
-	df_sorted = pd.read_csv("./newDataSet.txt", sep=" ")
+	df_sorted = pd.read_csv("./DataSet.txt", sep=" ")
 	# print(df_sorted)
 
 	for index, row in df_sorted.iterrows():
@@ -48,7 +48,6 @@ def main():
 	instances = list(instance_hours.keys())
 	instances.sort()
 	total = 0
-	print(instances)
 	for ins in instances:
 		total += instance_hours[ins]
 		print("Instance number: " + str(ins) + ", Hours: " + str(instance_hours[ins]))

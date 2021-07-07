@@ -10,7 +10,7 @@ except:
 
 # Games per AMI
 try:
-    GamesPerAMI = int(input('How many games do you wish to put inside 1 ami (default = 3)'))
+    GamesPerAMI = int(input('How many games do you wish to put inside 1 ami (default = 3):'))
 except:
     print('\nPlease input an integer! Default value is used\n')
     print('--------------------------------------------------')
@@ -30,7 +30,7 @@ try:
             for line in data:
                 new = line.strip('\n').split(' ')
                 if (new[1] == 'start'):
-                    newData.write(f"{new[0]} {new[1]} {new[2]} {random.randrange(1,AMI)}\n")
+                    newData.write(f"{new[0]} {new[1]} {new[2]} {random.randint(1,AMI)}\n")
                 elif (new[1] == 'action'):
                     newData.write(f"{new[0]} {new[1]} {new[2]} GameID\n")
                 else:
