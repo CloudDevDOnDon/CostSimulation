@@ -90,7 +90,7 @@ def main():
 		# print(index, row)
 		if(row["action"] == "start"):
 			# Added an additional column with information regarding what each users wish to play
-			get_instance(row["id"], row["timestamp"], int(row['GameID']))
+			get_instance(row["id"], row["timestamp"], row['GameID'])
 		elif(row["action"] == "end"):
 			release_instance(row["id"], row["timestamp"])
 
