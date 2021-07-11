@@ -69,7 +69,7 @@ AMI_list = {
 # print(random.choices(list(AMI_list.keys()), weights=(80,80,80,80,80,80,80,80,80,80,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20), k=1))
 # Variable processing
 try:
-    with open('DataSet_GroupedAMI.txt', 'w') as newData:
+    with open('newDataSet.txt', 'w') as newData:
         with open('dataset.txt', 'r') as data:
             for line in data:
                 new = line.strip('\n').split(' ')
@@ -80,7 +80,7 @@ try:
                     newData.write(f"{new[0]} {new[1]} {new[2]} GameID\n")
                 else:
                     newData.write(f"{new[0]} {new[1]} {new[2]} null\n")
-    print('DataSet_GroupedAMI.txt created!')
+    print('newDataSet.txt created!')
 except:
     print('Error encountered, please report to CloudDevGaming')
 
