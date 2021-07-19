@@ -56,13 +56,13 @@ import random
 # }
 
 AMI_list = {
-    "eSports" : ["Dota 2", "Counter Strike: Global Offensive", "Apex Legends", "PLAYERUNKNOWN'S BATTLEGROUNDS", "Tom Clancy's Rainbow Six Siege"],
+    "eSports" : ["Dota_2", "Counter_Strike: Global_Offensive", "Apex_Legends", "PLAYERUNKNOWN'S_BATTLEGROUNDS", "Tom Clancy's_Rainbow Six Siege"],
     "MMORPG" : ["Final Fantasy XIV", "Destiny 2", "Black Desert", "VRChat", ],
     "Survival" : ["ARK: Survival Evolved" , "Unturned", "Don't Starve Together"],
     "Co-Op": ["Grand Theft Auto V", "Rust", "Warframe" , "Dead by Daylight"],
     "FPS" : ["Team Fortress 2", "PAYDAY 2", "Left 4 Dead 2"],
     "RPG/Strategy" : ["Sid Meier's Civilization VI", "Hearts of Iron IV", "Monster Hunter Stories 2: Wings of Ruin", "Monster Hunter: World"],
-    "Others" : ["Football Manager 2021", "Terraria", "Stardew Valley", "Rocket League", "Garry's Mod", "War Thunder", ]
+    "Others" : ["Football Manager 2021", "Terraria", "Stardew Valley", "Rocket League", "Garry's Mod", "War Thunder" ]
 }
 
 # print(AMI)
@@ -74,7 +74,7 @@ try:
             for line in data:
                 new = line.strip('\n').split(' ')
                 if (new[1] == 'start'):
-                    temp_game = random.choices(list(AMI_list.keys()), weights=(95,60,15,30,30,10,10), k=1)
+                    temp_game = random.choices(list(AMI_list.keys()), weights=(55.68,6.07,4.56,14.3,6.18,4.41,7.47), k=1)
                     newData.write(f"{new[0]} {new[1]} {new[2]} {temp_game[0]}\n")
                 elif (new[1] == 'action'):
                     newData.write(f"{new[0]} {new[1]} {new[2]} GameID\n")
