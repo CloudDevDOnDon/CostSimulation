@@ -23,36 +23,36 @@ import random
 
 
 AMI_list = {
-    "Dota_2": 10,
-    "Counter_Strike:_Global_Offensive" : 10,
-    "Valorant" : 8,
-    "League_of_Legends": 10,
-    "Monster_Hunter_World": 8,
-    "MapleStory" : 8,
-    "Rainbow_Six:_Siege" : 8,
-    "OverCooked!_2" : 8,
-    "Fall_Guys!_Ultimate_Knockout": 8,
-    "Fortnite": 9,
-    "The_Crew_2": 4,
-    "Assasin's_Creed:_Valhalla": 5,
-    "The_Division_2": 3,
-    "Watch_Dogs_Legion": 2,
-    "Phantasy_Star_Online_2": 5,
-    "For_Honor": 1,
-    "Ghost_Recon_Breakpoint" : 1,
-    "World_of_Warcraft": 6,
-    "Final_Fantasy_XIV": 6,
-    "MineCraft": 5,
-    "Left_4_Dead_2": 5,
-    "Forza_Horizon+_4": 5,
-    "Player_Unknowns_Battleground": 7,
-    "Call_of_Duty_Black_Ops:_Modern_Warfare": 5,
-    "Destiny_2": 3,
-    "Runescape_3" : 5,
-    "Old_School_Runescape" : 6,
-    "Halo:_The_Master_Chief_Collection": 4,
-    "Tera" : 4,
-    "WarFrame": 6
+    "Counter-Strike: Global Offensive" : 379569,
+    "Dota 2" : 304536,
+    "PLAYERUNKNOWN'S BATTLEGROUNDS" : 183353,
+    "Apex Legends" : 122892,
+    "Grand Theft Auto V" : 92447,
+    "Team Fortress 2" : 72341,
+    "Rust" : 70773,
+    "Warframe" : 56371,
+    "Dead by Daylight" : 45615,
+    "ARK: Survival Evolved" : 43722,
+    "Tom Clancy's Rainbow Six Siege" : 42475,
+    "Destiny 2" : 41539,
+    "FINAL FANTASY XIV Online" : 34756,
+    "Sid Meier's Civilization VI" : 30873,
+    "Football Manager 2021" : 28214,
+    "Terraria" : 27359,
+    "PAYDAY 2" : 25458,
+    "Total War: WARHAMMER II" : 24722,
+    "Stardew Valley" : 24711,
+    "Unturned" : 24159,
+    "Rocket League" : 20610,
+    "Garry's Mod" : 19342,
+    "War Thunder" : 18374,
+    "Black Desert" : 18341,
+    "VRChat" : 17970,
+    "Hearts of Iron IV" : 17272,
+    "Monster Hunter Stories 2: Wings of Ruin" : 17208,
+    "Left 4 Dead 2" : 16873,
+    "Don't Starve Together" : 16680,
+    "Monster Hunter: World" : 16505,
 }
 
 # print(AMI)
@@ -64,7 +64,7 @@ try:
             for line in data:
                 new = line.strip('\n').split(' ')
                 if (new[1] == 'start'):
-                    temp_game = random.choices(list(AMI_list.keys()), weights=(80,80,80,80,80,80,80,80,80,80,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20), k=1)
+                    temp_game = random.choices(list(AMI_list.keys()), weights=(20.46,16.42,9.88,6.62,4.98,3.9,3.82,3.04,2.46,2.36,2.29,2.24,1.87,1.66,1.52,1.47,1.37,1.33,1.33,1.3,1.11,1.04,0.99,0.99,0.97,0.93,0.93,0.91,0.9,0.89), k=1)
                     newData.write(f"{new[0]} {new[1]} {new[2]} {temp_game[0]}\n")
                 elif (new[1] == 'action'):
                     newData.write(f"{new[0]} {new[1]} {new[2]} GameID\n")
