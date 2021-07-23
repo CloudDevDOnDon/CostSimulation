@@ -74,7 +74,7 @@ try:
             for line in data:
                 new = line.strip('\n').split(' ')
                 if (new[1] == 'start'):
-                    temp_game = random.choices(list(AMI_list.keys()), weights=(55.68,6.07,4.56,14.3,6.18,4.41,7.47), k=1)
+                    temp_game = random.choices(list(AMI_list.keys()), weights=(100,100,100,100,100,100,100), k=1)
                     newData.write(f"{new[0]} {new[1]} {new[2]} {temp_game[0]}\n")
                 elif (new[1] == 'action'):
                     newData.write(f"{new[0]} {new[1]} {new[2]} GameID\n")
