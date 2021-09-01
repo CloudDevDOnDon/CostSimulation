@@ -8,14 +8,9 @@ def steam_store(app_link):
     print(link)
     url = Request(link, headers={'User-Agent': 'Mozilla/5.0', 'Cookie':"birthtime=568022401"})
     uClient = uReq(url)
-
     page_html = uClient.read()
-
     uClient.close()
-
     page_soup = soup(page_html, "html.parser")
-
-    
     container = page_soup.find_all("ul")
     # print(container)
         # looper = container.find_all("li")
@@ -83,14 +78,15 @@ def write_to_file(gamelist):
     headers = "Game Title , Current Players , Peak Players , Total Hours Played , Space\n"
     f.write(headers)
     for i in range(len(gamelist)):
-        title = gamelist[i][0]
-        current_players = gamelist[i][1]
-        peak_players = gamelist[i][2]
-        hours_played = gamelist[i][3]
         space = gamelist[i][4]
         if(space is None):
-            space = "No Value was Found"
-        f.write(title + "," + current_players + "," + peak_players + "," + hours_played + "," + space + "\n")
+            print("Skipped")
+        else:
+            title = gamelist[i][0]
+            current_players = gamelist[i][1]
+            peak_players = gamelist[i][2]
+            hours_played = gamelist[i][3]
+            f.write(title + "," + current_players + "," + peak_players + "," + hours_played + "," + space + "\n")
 
     f.close()
 
