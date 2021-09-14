@@ -1,0 +1,18 @@
+,0,1,2,3
+0,All Games split into AMI (128GB),,,
+1,Service,Rate,Not Optimized,Optimized
+2,Instances,,,
+3,AWS EC2 Instance (g4dn.xlarge),$0.506,11671hrs x $0.506 = $5905.526,10325.0hrs x $0.506 = $5224.45
+4,Amazon EBS (Volume),$0.096,"11671 / 730 = 15.99 instance months
+128GB x 15.99 instance months x $0.096 = $196.46","10325.0 / 730 = 14.14 instance months
+128GB x 14.144 instance months x $0.096 = $173.8"
+5,AMI,,,
+6,Amazon EBS (Snapshot),0.05 per GB-month of data stored,30 Snapshot x 89.6 GB x $0.05 = $134.4,
+7,Data Transfer (In),Free,$0,
+8,Data Transfer (Out),"$0.12 per GB-month for next 9.999TB/month
+$0.085per GB for next 40TB/month",$3549.58,
+9,Lambda & Cloudwatch,,,
+10,AWS Lambda request,$0.2 per 1M request,$0(Not Used),$0.2(under 1M request)
+11,AWS Lamdba compute time,$2.1e-06 per 1000ms,$0(Not Used),5305 x 3000.0ms x $2.1e-06 = $0.03
+12,Amazon CloudWatch Events,Free,$0(Not Used),$0
+13,,Total,$9785.96,$9082.46 (7.2% savings)
