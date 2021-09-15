@@ -23,13 +23,13 @@ f.close()
 count = 0
 ami_space = 128 * 0.7
 gamelist = {
-    "bin_1" : [],
+    "1" : [],
     }
 gamespace = {
-    "bin_1" : [],
+    "1" : [],
 }
 bin_spaces = {
-    "bin_1" : ami_space
+    "1" : ami_space
 }
 
 binz = 2
@@ -38,7 +38,7 @@ while count < len(retlist):
         bin = 1
         added = False
         while len(bin_spaces) > bin - 1:
-            bin_name = "bin_" + str(bin)
+            bin_name = str(bin)
             if value < bin_spaces[bin_name] and not added:
                 gamelist[bin_name].append(key)
                 gamespace[bin_name].append(value)
@@ -48,7 +48,7 @@ while count < len(retlist):
                 del retlist[key]
             bin += 1
         if(not added):
-            new_bin = "bin_" + str(binz)
+            new_bin =  str(binz)
             gamelist[new_bin] = [key]
             gamespace[new_bin] = [value]
             bin_spaces[new_bin] = ami_space - value
@@ -56,7 +56,7 @@ while count < len(retlist):
             binz += 1
             del retlist[key]
 
-filename = "pop_128_group.csv"
+filename = "pop_group.csv"
 f = open(filename, "w", encoding="utf-8")
 headers = "Bin No, Games, Weighted Probability, Total Space\n"
 f.write(headers)
