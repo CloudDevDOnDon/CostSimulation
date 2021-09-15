@@ -2,7 +2,7 @@ import random
 import pandas as pd
 
 
-game = pd.read_csv("pop_512_group.csv")
+game = pd.read_csv("pop_128_group.csv")
 
 AMI_list = (game.iloc[:,0].tolist())
 Weighted = (game.iloc[:,2].tolist())
