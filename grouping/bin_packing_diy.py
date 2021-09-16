@@ -26,7 +26,11 @@ retlist = {k: v for k, v in sorted(retlist.items(), key=lambda item: item[1], re
 print(retlist)
 
 count = 0
-ami_space = 128 * 0.7
+ami_space = 100 * 0.7
+for i in list(retlist.keys()):
+    if (retlist[i] > ami_space):
+        del retlist[i]
+
 gamelist = {
     "1" : [],
     }
@@ -61,7 +65,7 @@ while count < len(retlist):
             binz += 1
             del retlist[key]
 
-filename = "binning_method.csv"
+filename = "group_bin_100.csv"
 f = open(filename, "w", encoding="utf-8")
 headers = "Bin No, Games, Weighted Probability, Total Space\n"
 f.write(headers)

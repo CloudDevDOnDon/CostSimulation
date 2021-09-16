@@ -22,6 +22,10 @@ f.close()
 
 count = 0
 ami_space = 128 * 0.7
+for i in list(retlist.keys()):
+    if (retlist[i] > ami_space):
+        del retlist[i]
+
 gamelist = {
     "1" : [],
     }
