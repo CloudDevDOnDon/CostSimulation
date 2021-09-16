@@ -56,7 +56,7 @@ while count < len(retlist):
             binz += 1
             del retlist[key]
 
-filename = "pop_group.csv"
+filename = "pop_100_group.csv"
 f = open(filename, "w", encoding="utf-8")
 headers = "Bin No, Games, Weighted Probability, Total Space\n"
 f.write(headers)

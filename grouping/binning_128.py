@@ -1,5 +1,6 @@
 import csv
-import binpacking
+
+
 
 retlist = {}
 retpop = {}
@@ -19,33 +20,69 @@ with open('games.csv', newline='') as f:
         sumer += int(row[1])
 
 f.close()
+print(retlist)
 
-groups = binpacking.to_constant_bin_number(retlist, 55)
+retlist = {k: v for k, v in sorted(retlist.items(), key=lambda item: item[1], reverse=True)}
+print(retlist)
 
-rpg = [list(group.keys()) for group in groups]
-realValues = [sum(group.values()) for group in groups]
+count = 0
+ami_space = 128 * 0.7
+for i in list(retlist.keys()):
+    if (retlist[i] > ami_space):
+        del retlist[i]
 
-print(realValues)
+gamelist = {
+    "1" : [],
+    }
+gamespace = {
+    "1" : [],
+}
+bin_spaces = {
+    "1" : ami_space
+}
+
+binz = 2
+while count < len(retlist):
+    for key,value in dict(retlist).items():
+        bin = 1
+        added = False
+        while len(bin_spaces) > bin - 1:
+            bin_name = str(bin)
+            if value < bin_spaces[bin_name] and not added:
+                gamelist[bin_name].append(key)
+                gamespace[bin_name].append(value)
+                bin_spaces[bin_name] -= value
+                count += 1
+                added = True
+                del retlist[key]
+            bin += 1
+        if(not added):
+            new_bin =  str(binz)
+            gamelist[new_bin] = [key]
+            gamespace[new_bin] = [value]
+            bin_spaces[new_bin] = ami_space - value
+            count += 1
+            binz += 1
+            del retlist[key]
 
 filename = "group_bin_128.csv"
 f = open(filename, "w", encoding="utf-8")
 headers = "Bin No, Games, Weighted Probability, Total Space\n"
 f.write(headers)
-for i in range(len(groups)):
-    bin_no = str(i+1)
-    games = "; ".join(rpg[i])
-    tspace = "{:.2f}".format(realValues[i])
+for key,value in gamelist.items():
+    bin_no = key
+    games = "; ".join(value)
+    tspace = "{:.2f}".format(sum(gamespace[key]))
     temp_players = 0
     with open('games.csv', newline='') as fifi:
         reader = csv.reader(fifi)
         next(reader, None)
         for row in reader:
             game_name = row[0]
-            if(game_name in rpg[i]):
+            if(game_name in value):
                 temp_players += int(retpop[game_name])
         weighted_prob = temp_players / int(sumer)
     fifi.close()
-    f.write( bin_no + "," + games + "," + str(weighted_prob) + "," + tspace + "\n")
+    f.write( bin_no + "," + games + "," + str(weighted_prob) + ","  + tspace + "\n")
 
 f.close()
-

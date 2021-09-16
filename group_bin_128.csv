@@ -1,56 +1,57 @@
 Bin No, Games, Weighted Probability, Total Space
-1,Red Dead Redemption 2,0.0040006789279781975,150.00
-2,Microsoft Flight Simulator,0.0010878588924850476,150.00
-3,Red Dead Online,0.0006744793573727677,150.00
-4,Mass Effect™ Legendary Edition,0.0009013590194418418,120.00
-5,NBA 2K21,0.0031485969392119916,110.00
-6,Destiny 2,0.029181241603228193,105.00
-7,Phantasy Star Online 2 New Genesis; Valheim,0.0048558407311616305,104.00
-8,Call of Duty: Black Ops III; 鬼谷八荒,0.002365297472430528,106.00
-9,The Elder Scrolls Online; The Sims™ 4; Kerbal Space Program,0.008598841852898482,105.00
-10,Warhammer: Vermintide 2; Phasmophobia; Dyson Sphere Program,0.011921961609086684,104.00
-11,Nioh 2 – The Complete Edition; DayZ; Aim Lab,0.006744109170523849,104.00
-12,PAYDAY 2; SnowRunner; Slay the Spire,0.010147988504763788,104.00
-13,Fallout 76; Rust; Raft,0.023102030145223516,106.00
-14,Forza Horizon 4; Rocket League; The Elder Scrolls V: Skyrim,0.009513204533213061,106.00
-15,NBA 2K20; Hunt: Showdown; Garry's Mod,0.010453916736875029,105.00
-16,DOOM Eternal; Farming Simulator 19; Yu-Gi-Oh! Duel Links,0.006992205331911599,105.00
-17,F1 2021; GUILTY GEAR -STRIVE-; GrandChase,0.0038600340695914867,105.00
-18,Borderlands 3; NARAKA: BLADEPOINT; Tribes of Midgard; A Dance of Fire and Ice,0.02383399937171786,104.00
-19,Grand Theft Auto V; EVE Online; Frostpunk; Legends of Idleon MMO,0.03254268793883078,104.00
-20,Cyberpunk 2077; Sekiro™: Shadows Die Twice; Football Manager 2021; Bloons TD 6,0.01946340051207048,104.05
-21,SCUM; BeamNG.drive; Football Manager 2020; Hearts of Iron IV,0.012278877879883132,104.00
-22,Middle-earth™: Shadow of War™; The Isle; American Truck Simulator; Fall Guys: Ultimate Knockout,0.006015561960048647,104.00
-23,Kingdom Come: Deliverance; Elite Dangerous; Dota Underlords; Oxygen Not Included,0.004928729672369342,104.00
-24,Conan Exiles; DARK SOULS™ III; RuneScape; Albion Online,0.007704669067096837,104.00
-25,World of Warships; HUMANKIND™; 封灵档案/Soul Dossier; Idle Champions of the Forgotten Realms,0.008282989774331732,104.00
-26,Tom Clancy's Rainbow Six Siege; Monster Hunter Stories 2: Wings of Ruin; Kenshi; Super Animal Royale,0.014857366950306167,103.90
-27,ARK: Survival Evolved; Total War: SHOGUN 2; Crusader Kings III; The Forest,0.01546785460812099,105.00
-28,FINAL FANTASY XIV Online; Fallout 4; Sid Meier's Civilization VI; Darkest Dungeon®,0.02451121634190594,104.00
-29,Total War: WARHAMMER II; SMITE; The Elder Scrolls V: Skyrim Special Edition; Age of Empires II (2013),0.015835379128576778,104.00
-30,Mount & Blade II: Bannerlord; Age of Empires II: Definitive Edition; 7 Days to Die; Crusader Kings II,0.012582752902382886,104.00
-31,Divinity: Original Sin 2; Aliens: Fireteam Elite; Euro Truck Simulator 2; Onmyoji,0.008034551411342067,104.00
-32,Total War: THREE KINGDOMS; Paladins; Stellaris; Grim Dawn,0.0069528521476914735,105.00
-33,Project Zomboid; Battlefield 4™; MIR4; Unturned,0.013931711617128422,104.00
-34,TEKKEN 7; Company of Heroes 2; Fallout: New Vegas; Cities: Skylines,0.007972955122997522,104.00
-35,Killing Floor 2; Psychonauts 2; No Man's Sky; Risk of Rain 2,0.005045762620223978,104.00
-36,theHunter: Call of the Wild™; Hell Let Loose; DEAD OR ALIVE Xtreme Venus Vacation; Gunfire Reborn,0.004033530281761955,104.00
-37,Dishonored 2; State of Decay 2; Granado Espada; SCP: Secret Laboratory,0.003156467576056017,104.00
-38,Apex Legends; BATTLETECH; Sid Meier's Civilization V; The Sims(TM) 3,0.05683386865070593,105.50
-39,Squad; Total War: ROME II - Emperor Edition; Zero Hour; They Are Billions,0.0038107570389158507,104.00
-40,Dead by Daylight; For Honor; Hollow Knight; Europa Universalis IV,0.01868386526291007,105.00
-41,Bless Unleashed; Insurgency: Sandstorm; Shadowverse; Football Manager 2019,0.013586430200797056,105.50
-42,Battlefield™ V; War Thunder; Left 4 Dead 2; Noita; NGU IDLE; Mount & Blade: Warband,0.023840159000552315,103.85
-43,EA SPORTS™ FIFA 21; Black Desert; Borderlands 2; Lords Mobile; Dead Cells; Melvor Idle; Muck; Aseprite,0.013915285940236543,103.86
-44,Battlefield 1 ™; Warframe; Planet Zoo; Deep Rock Galactic,0.019216673157090382,104.00
-45,Sea of Thieves; The Witcher 3: Wild Hunt; Counter-Strike: Global Offensive; Totally Accurate Battle Simulator,0.14106747736507505,104.00
-46,STAR WARS™: The Old Republic™; Car Mechanic Simulator 2021; Dota 2; The Escapists 2,0.10392594209812014,104.00
-47,Assassin's Creed Unity; Space Engineers; Team Fortress 2; Don't Starve Together; Shop Titans; Your Chronicle; PICO PARK,0.03290473723365594,103.85
-48,Monster Hunter: World; Starbase; Total War: MEDIEVAL II - Definitive Edition; Wallpaper Engine; Realm of the Mad God Exalt; Plants vs. Zombies: Game of the Year; Soundpad,0.026919631216177648,103.85
-49,Assassin's Creed Odyssey; Far Cry 5; Assetto Corsa; Tabletop Simulator,0.004819567361358732,104.00
-50,Arma 3; Conqueror's Blade; Splitgate; World of Tanks Blitz; Draw & Guess; Terraria; Leaf Blower Revolution - Idle Game,0.028880446395145663,103.86
-51,XCOM 2; eFootball PES 2021 SEASON UPDATE; Hades; Factorio; SAO Utils; tModLoader; Geometry Dash; EVGA Precision X1,0.01443098375432115,103.86
-52,Titanfall® 2; Russian Fishing 4; Satisfactory; Eternal Return; Stardew Valley; The Binding of Isaac: Rebirth,0.017146695667111758,103.95
-53,Halo: The Master Chief Collection; Dying Light; ROMANCE OF THE THREE KINGDOMS XIV; Human: Fall Flat; Brawlhalla,0.010512433210802346,103.85
-54,Assassin's Creed Origins; PUBG: BATTLEGROUNDS; Soulworker; RimWorld; Blender; People Playground,0.06821138751114722,103.85
-55,Age of Empires III: Definitive Edition; Path of Exile; King's Bounty II; VRChat; Don't Starve; Among Us; Clicker Heroes; YoloMouse,0.016310697153635517,103.86
+1,The Elder Scrolls Online; Unturned; Wallpaper Engine; Plants vs. Zombies: Game of the Year; Soundpad,0.03345739282074727,89.60
+2,Warhammer: Vermintide 2; Cities: Skylines; Draw & Guess; EVGA Precision X1; YoloMouse,0.0072560427669874005,89.58
+3,Nioh 2 – The Complete Edition; Risk of Rain 2; SAO Utils; Aseprite,0.0036509488908219477,89.55
+4,PAYDAY 2; The Sims(TM) 3; Clicker Heroes,0.008909218705834606,89.59
+5,Fallout 76; Hollow Knight; Stardew Valley,0.012387697989291827,89.50
+6,Forza Horizon 4; Shadowverse; Lords Mobile,0.0039041780762384105,89.52
+7,NBA 2K20; Sid Meier's Civilization V; RimWorld; Human: Fall Flat,0.014069276661097906,89.50
+8,DOOM Eternal; Crusader Kings III; VRChat; Blender,0.010051829854625915,89.50
+9,F1 2021; RuneScape; Valheim; Don't Starve,0.006314303958519691,89.50
+10,Borderlands 3; Kenshi; Dead Cells,0.0028498549407409484,89.50
+11,Grand Theft Auto V; The Sims™ 4; The Binding of Isaac: Rebirth; NGU IDLE,0.03755149278604803,89.60
+12,Cyberpunk 2077; Phasmophobia; Don't Starve Together; Brawlhalla; Terraria,0.03163893350817554,89.55
+13,SCUM; DayZ; World of Tanks Blitz; People Playground; tModLoader,0.017376312941996146,89.55
+14,Middle-earth™: Shadow of War™; Planet Zoo; Factorio; Among Us; Realm of the Mad God Exalt,0.007501401315559838,89.50
+15,Kingdom Come: Deliverance; Counter-Strike: Global Offensive; Gunfire Reborn; Melvor Idle; Your Chronicle; Leaf Blower Revolution - Idle Game,0.13649326855228874,89.50
+16,Conan Exiles; NARAKA: BLADEPOINT; Geometry Dash; Muck; Mount & Blade: Warband; PICO PARK,0.027281338309400893,89.40
+17,World of Warships; HUMANKIND™; Bloons TD 6,0.009755825468970185,89.05
+18,Tom Clancy's Rainbow Six Siege; Monster Hunter Stories 2: Wings of Ruin,0.012704918874266235,89.00
+19,ARK: Survival Evolved; DARK SOULS™ III; SCP: Secret Laboratory,0.015038049396116833,89.00
+20,FINAL FANTASY XIV Online; Sekiro™: Shadows Die Twice; They Are Billions,0.012737770228049991,89.00
+21,Total War: WARHAMMER II; BeamNG.drive; Totally Accurate Battle Simulator,0.006622969803446244,89.00
+22,Mount & Blade II: Bannerlord; The Isle; The Escapists 2,0.00503104795134167,89.00
+23,Divinity: Original Sin 2; Elite Dangerous; Eternal Return; Slay the Spire,0.0069152099714809186,89.00
+24,Total War: THREE KINGDOMS; EVE Online; Europa Universalis IV,0.005742485081721165,89.00
+25,Project Zomboid; Rust; Tribes of Midgard; A Dance of Fire and Ice,0.02266503869957916,89.00
+26,TEKKEN 7; Rocket League; Frostpunk; Legends of Idleon MMO,0.009057391999463428,89.00
+27,Killing Floor 2; Hunt: Showdown; Football Manager 2021; Hearts of Iron IV,0.020495138341841607,89.00
+28,theHunter: Call of the Wild™; Farming Simulator 19; Football Manager 2020; Fall Guys: Ultimate Knockout,0.008022232153673158,89.00
+29,Dishonored 2; GUILTY GEAR -STRIVE-; American Truck Simulator; Oxygen Not Included,0.005166217584097754,89.00
+30,Apex Legends; Total War: SHOGUN 2; Super Animal Royale; Shop Titans,0.05494388920333414,89.50
+31,Squad; Fallout 4; Dyson Sphere Program,0.008982449848644231,88.00
+32,Dead by Daylight; War Thunder,0.019182110795297056,89.00
+33,Bless Unleashed; Black Desert,0.016648107933122856,89.00
+34,Battlefield™ V; Warframe; Aim Lab,0.022789257881073992,88.00
+35,EA SPORTS™ FIFA 21; The Witcher 3: Wild Hunt; Deep Rock Galactic,0.010740339477677163,88.00
+36,Battlefield 1 ™; Car Mechanic Simulator 2021; Tabletop Simulator,0.005480700856256848,88.00
+37,Sea of Thieves; Space Engineers; Kerbal Space Program,0.004130031133501742,88.00
+38,STAR WARS™: The Old Republic™; Total War: ROME II - Emperor Edition; Albion Online; Idle Champions of the Forgotten Realms,0.005787655693173831,89.00
+39,Assassin's Creed Unity; BATTLETECH; Darkest Dungeon®; Age of Empires II (2013),0.003368290367640869,89.00
+40,Monster Hunter: World; PUBG: BATTLEGROUNDS,0.06369569517228824,88.00
+41,Assassin's Creed Odyssey; Halo: The Master Chief Collection,0.004048244950644263,89.00
+42,Arma 3; Assassin's Creed Origins; Crusader Kings II,0.0040557733858863744,89.00
+43,XCOM 2; Age of Empires III: Definitive Edition; Onmyoji,0.002371114899663068,89.00
+44,Titanfall® 2; Path of Exile; Noita,0.006459397437731286,86.60
+45,Dying Light; Conqueror's Blade; Dota Underlords,0.0053092578536978645,87.00
+46,eFootball PES 2021 SEASON UPDATE; Russian Fishing 4; Football Manager 2019,0.003960983542156157,87.00
+47,Far Cry 5; Starbase; 鬼谷八荒,0.003386427052542318,86.00
+48,For Honor; Insurgency: Sandstorm; Raft,0.0027755971931255805,86.00
+49,SMITE; Age of Empires II: Definitive Edition; Soulworker; The Elder Scrolls V: Skyrim,0.009641872335532778,86.00
+50,Aliens: Fireteam Elite; Paladins; King's Bounty II; Garry's Mod,0.010779350460295375,85.00
+51,Battlefield 4™; Company of Heroes 2; SnowRunner; Yu-Gi-Oh! Duel Links,0.006725630284020486,85.00
+52,Psychonauts 2; Hell Let Loose; ROMANCE OF THE THREE KINGDOMS XIV; GrandChase,0.004718617888794061,85.00
+53,State of Decay 2; Dota 2; Team Fortress 2; Splitgate; Left 4 Dead 2,0.13813480963667088,88.00
+54,Hades; Satisfactory; Assetto Corsa; 封灵档案/Soul Dossier; Total War: MEDIEVAL II - Definitive Edition; Borderlands 2,0.0064765075178269925,88.00
+55,Sid Meier's Civilization VI; The Elder Scrolls V: Skyrim Special Edition; 7 Days to Die; Euro Truck Simulator 2; Stellaris; MIR4; Fallout: New Vegas; No Man's Sky,0.029175766377597567,88.00
+56,DEAD OR ALIVE Xtreme Venus Vacation; Granado Espada; Zero Hour; The Forest; Grim Dawn,0.004599189529726027,40.00
